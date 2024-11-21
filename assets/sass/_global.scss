@@ -1,0 +1,53 @@
+@use "./mixins" as mix;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+i {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 4fr;
+}
+@media (max-width: 1313px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.4fr 1.75fr 4.25fr;
+  }
+}
+@media (max-width: 1171px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1.75fr 4.25fr;
+  }
+}
+@media (max-width: 1136px) {
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
